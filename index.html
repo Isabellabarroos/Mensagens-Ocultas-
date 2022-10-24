@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Codificar e decodificar</title>
+</head>
+
+<body>
+  <header>
+    <h1>Codificando e Decodificando</h1>
+  </header>
+
+  <form name="Criptografia">
+    <div class="grupo">
+      <label for="mensagem">Insira a sua mensagem abaixo:</label>
+      <input name="mensagem" id="mensagem" placeholder="Mensagem" />
+    </div>
+
+    <div class="grupo">
+      <label for="criptografia">Tipo de criptografia</label>
+      <select name="criptografia" id="criptografia">
+        <option value="opcao">Selecione</option>
+        <option value="base64">Base64</option>
+        <option value="cifra">Cifra de César</option>
+      </select>
+    </div>
+
+    <div style="display: none;" id="incrementoContainer">
+      <label for="incremento">Incremento</label>
+      <input name="incremento" id="incremento" placeholder="Incremento" />
+    </div>
+
+    <div class="acao">
+      <input type="radio" name="acao" id="codificar" value="codificar" checked>
+      <label for="codificar">Codificar</label>
+      <input type="radio" name="acao" id="decodificar" value="decodificar">
+      <label for="decodificar">Decodificar</label>
+    </div>
+
+    <button type="submit">
+      Codificar Mensagem
+    </button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="./js/projeto.js"></script>
+
+</body>
+</script>
+</html>
